@@ -1,0 +1,23 @@
+#bg{
+    background-color: #fffff0;
+    height: 100vh;
+}
+
+#droparea{
+    display: flex;
+    width: 100%;
+}
+#droparead h1{
+    position: fixed;
+    text-align: center;
+}
+
+#box {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 99;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title> HTML L2 </title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bg">
+
+        <h1 id="header" style="text-align:center">HTML L2 - SVG, Drop & Drag, GeoLocation, Web storage</h1>
+        <p id="pos" style="text-align: center;"></p>
+        <div id="droparea" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <svg width="180" height="180">
+                <circle cx="80" cy="80" r="80" stroke="black" stroke-width="1" fill="#99ffcc" opacity="0.70" />
+            </svg>
+            <h1>Drag Here</h1>
+        </div>
+        <hr>
+        <div id="droparea" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <svg width="180" height="180">
+                <circle cx="80" cy="80" r="80" stroke="black" stroke-width="1" fill="calamon" opacity="0.60" />
+            </svg>
+            <h1>Drag Here</h1>
+        </div>
+        <hr>
+        <div id="droparea">
+            <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="hello.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="130" height="130">
+            </div>
+        <h1>Help me Climb Up</h1>
+        </div>
+    </div>
+</body>
+
+</html>
