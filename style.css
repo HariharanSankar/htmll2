@@ -2,22 +2,44 @@
     background-color: #fffff0;
     height: 100vh;
 }
+#header{
+    text-align: center;
+    background-color: rgb(0, 217, 255);
+    width: 500px;
+    margin: auto;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
 
 #droparea{
-    display: flex;
     width: 100%;
 }
-#droparead h1{
-    position: fixed;
-    text-align: center;
+#droparea h1{
+    margin-left: 1rem;
+}
+.backlog h1{
+    background-color: rgb(194, 193, 193);
+}
+.SelectedforDev h1{
+    background-color: rgb(255, 255, 107);;
+}
+.InProgress h1{
+    background-color: rgb(255, 110, 255);;
+}
+.Done h1{
+    background-color: rgb(167, 252, 125);
 }
 
-#box {
-    width: 130px;
-    height: 130px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    z-index: 99;
+.box{
+    background-color: white;
+    margin-left: 1rem;
+    width: 440px;
+    height: 300px;
 }
-
+.block{
+   position: absolute;
+}

@@ -9,28 +9,66 @@
 
 <body>
     <div id="bg">
-
-        <h1 id="header" style="text-align:center">HTML L2 - SVG, Drop & Drag, GeoLocation, Web storage</h1>
+        <h1 id="header">Astra Project - kanban Board</h1>
         <p id="pos" style="text-align: center;"></p>
-        <div id="droparea" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <svg width="180" height="180">
-                <circle cx="80" cy="80" r="80" stroke="black" stroke-width="1" fill="#99ffcc" opacity="0.70" />
-            </svg>
-            <h1>Drag Here</h1>
-        </div>
-        <hr>
-        <div id="droparea" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <svg width="180" height="180">
-                <circle cx="80" cy="80" r="80" stroke="black" stroke-width="1" fill="calamon" opacity="0.60" />
-            </svg>
-            <h1>Drag Here</h1>
-        </div>
-        <hr>
-        <div id="droparea">
-            <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <img src="hello.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="130" height="130">
+        <div class="container">
+            <div id="droparea" class="backlog">
+                <svg width="420" height="900" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <rect width="420" height="900" style="fill:rgb(231, 231, 231);" ondrop="drop(event)" ondragover="allowDrop(event)"> </rect>
+                    <foreignobject x="0" y="0" width="400" height="100" >
+                            <h1>BackLog</h1>
+                    </foreignobject>
+                    <foreignobject x="" y="80" width="400" height="250">
+                            <div class="box"  draggable="true" ondragstart="drag(event)" id="drag1">
+                                <h3>User Profile Change</h3>
+                                <h2>To change the User profile</h2>
+                            </div>
+                    </foreignobject>
+                    <foreignobject x="" y="350" width="400" height="250">
+                            <div class="box"  draggable="true" ondragstart="drag(event)" id="drag2">
+                                <h3>Admin : Block user Account</h3>
+                                <h2>To block the User accounts</h2>
+                            </div>
+                    </foreignobject>
+                     <foreignobject x="" y="600" width="400" height="250">
+                            <div class="box"  draggable="true" ondragstart="drag(event)" id="drag3">
+                                <h3>User Profile Password</h3>
+                                <h2>To change the User Password</h2>
+                            </div>
+                        </foreignobject>
+                    
+                    <foreignobject x="" y="1000" width="400" height="250">
+                            <div class="box"  draggable="true" ondragstart="drag(event)" id="drag4">
+                                <h3>Add new user list Change</h3>
+                                <h2>To add new  User list</h2>
+                        </div>
+                    </foreignobject>
+                </svg>
             </div>
-        <h1>Help me Climb Up</h1>
+            <div id="droparea" class="SelectedforDev" >
+                <svg width="440" height="900" >
+                    <rect width="420" height="900" style="fill:rgb(255, 255, 188);" ondrop="drop(event)" ondragover="allowDrop(event)"/>
+                    <foreignobject x="0" y="0" width="400" height="250" >
+                            <h1>Selected for Dev</h1>
+                    </foreignobject>
+                </svg>
+            </div>
+            <div id="droparea" class="InProgress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <svg width="440" height="900" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <rect width="420" height="900" style="fill:rgb(255, 190, 255);"ondrop="drop(event)" ondragover="allowDrop(event)" />
+                    <foreignobject x="0" y="0" width="400" height="250" >
+                            <h1>In Progress</h1>
+                    </foreignobject>
+                </svg>
+            </div>
+            <div id="droparea" class="Done" >
+                <svg width="440" height="900" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <rect width="420" height="900" style="fill:rgb(218, 255, 199);"ondrop="drop(event)" ondragover="allowDrop(event)" />
+                    <foreignobject x="0" y="0" width="400" height="250" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <h1>Done</h1>
+                    </foreignobject>
+                </svg>
+            </div>
         </div>
     </div>
 </body>

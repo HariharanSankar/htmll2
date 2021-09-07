@@ -1,15 +1,15 @@
 var x = document.getElementById("pos"); 
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported in this browser";
-    }
-}
-function showPosition(position) {
-    x.innerHTML = "Latitude : " + position.coords.latitude + "<br>Longitude : " + position.coords.longitude;
-}
+// function getLocation() {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(showPosition);
+//     } else {
+//         x.innerHTML = "Geolocation is not supported in this browser";
+//     }
+// }
+// function showPosition(position) {
+//     x.innerHTML = "Latitude : " + position.coords.latitude + "<br>Longitude : " + position.coords.longitude;
+// }
 
 function allowDrop(ev) {
     ev.preventDefault();
