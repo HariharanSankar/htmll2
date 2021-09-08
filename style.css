@@ -14,7 +14,12 @@
     flex-direction: row;
     margin: auto;
 }
-
+#pos{
+    text-align: center;
+    background-color: rgb(0, 217, 255);
+    width: 500px;
+    margin: auto;
+}
 #droparea{
     width: 100%;
 }

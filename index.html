@@ -14,16 +14,13 @@
         <div class="container">
             <div id="droparea" class="backlog">
                 <svg width="420" height="900" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    
                     <rect width="420" height="900" style="fill:rgb(231, 231, 231);" ondrop="drop(event)"
                         ondragover="allowDrop(event)"> </rect>
                     <foreignobject x="0" y="0" width="400" height="100">
-                        <h1>BackLog</h1>
+                        <h1 id="bd">BackLog</h1>
                     </foreignobject>
-                    <foreignobject x="0" y="100" width="400" height="800">
+                    <foreignobject x="0" y="100" width="400" height="800" id="bcount">
                         <svg width="420" height="100">
-                            <!-- <rect width="420" height="100" style="fill:rgb(161, 29, 29);" ondrop="drop(event)"
-                            ondragover="allowDrop(event)"> </rect> -->
                             <foreignobject x="" y="0" width="400" height="100">
                                 <div class="box" draggable="true" ondragstart="drag(event)" id="drag1">
                                     <h3>User Profile Change</h3>
@@ -32,8 +29,6 @@
                             </foreignobject>
                         </svg>
                         <svg width="420" height="100">
-                            <!-- <rect width="420" height="100" style="fill:rgb(29, 161, 47);" ondrop="drop(event)"
-                            ondragover="allowDrop(event)"> </rect> -->
                             <foreignobject x="" y="0" width="400" height="100">
                                 <div class="box" draggable="true" ondragstart="drag(event)" id="drag2">
                                     <h3>Admin : Block user Account</h3>
@@ -41,35 +36,23 @@
                                 </div>
                             </foreignobject>
                         </svg>
+                        <svg width="420" height="100">
+                            <foreignobject x="" y="" width="400" height="100">
+                                <div class="box" draggable="true" ondragstart="drag(event)" id="drag3">
+                                    <h3>User Profile Password</h3>
+                                    <h2>To change the User Password</h2>
+                                </div>
+                            </foreignobject>
+                        </svg>
+                        <svg width="420" height="100">
+                            <foreignobject x="" y="" width="400" height="100">
+                                <div class="box" draggable="true" ondragstart="drag(event)" id="drag4">
+                                    <h3>Add new user list Change</h3>
+                                    <h2>To add new User list</h2>
+                                </div> 
+                            </foreignobject>
+                        </svg>
                     </foreignobject>
-                    <!-- <foreignobject x="0" y="0" width="400" height="100">
-                        <h1>BackLog</h1>
-                    </foreignobject>
-                    <foreignobject x="" y="80" width="400" height="250">
-                        <div class="box" draggable="true" ondragstart="drag(event)" id="drag1">
-                            <h3>User Profile Change</h3>
-                            <h2>To change the User profile</h2>
-                        </div>
-                    </foreignobject>
-                    <foreignobject x="" y="350" width="400" height="250">
-                        <div class="box" draggable="true" ondragstart="drag(event)" id="drag2">
-                            <h3>Admin : Block user Account</h3>
-                            <h2>To block the User accounts</h2>
-                        </div>
-                    </foreignobject>
-                    <foreignobject x="" y="600" width="400" height="250">
-                        <div class="box" draggable="true" ondragstart="drag(event)" id="drag3">
-                            <h3>User Profile Password</h3>
-                            <h2>To change the User Password</h2>
-                        </div>
-                    </foreignobject>
-
-                    <foreignobject x="" y="1000" width="400" height="250">
-                        <div class="box" draggable="true" ondragstart="drag(event)" id="drag4">
-                            <h3>Add new user list Change</h3>
-                            <h2>To add new User list</h2>
-                        </div> 
-                    </foreignobject> -->
                 </svg>
             </div>
             <div id="droparea" class="SelectedforDev" >
@@ -77,9 +60,9 @@
                     <rect width="420" height="900" style="fill:rgb(255, 255, 188);" ondrop="drop(event)"
                         ondragover="allowDrop(event)" />
                     <foreignobject x="0" y="0" width="400" height="100">
-                        <h1>Selected for Dev</h1>
+                        <h1 id="sd">Selected for Dev</h1>
                     </foreignobject>
-                    <foreignobject x="0" y="100" width="400" height="800">
+                    <foreignobject x="0" y="100" width="400" height="800" id="scount">
                         
                     </foreignobject>
                 </svg>
@@ -89,9 +72,9 @@
                     <rect width="420" height="900" style="fill:rgb(255, 190, 255);" ondrop="drop(event)"
                         ondragover="allowDrop(event)" />
                     <foreignobject x="0" y="0" width="400" height="100">
-                        <h1>In Progress</h1>
+                        <h1 id="id">In Progress</h1>
                     </foreignobject>
-                    <foreignobject x="0" y="100" width="400" height="800">
+                    <foreignobject x="0" y="100" width="400" height="800" id="icount">
                         
                     </foreignobject>
                 </svg>
@@ -102,9 +85,9 @@
                         ondragover="allowDrop(event)" />
                     <foreignobject x="0" y="0" width="400" height="100" ondrop="drop(event)"
                         ondragover="allowDrop(event)">
-                        <h1>Done</h1>
+                        <h1 id="dd">Done</h1>
                     </foreignobject>
-                    <foreignobject x="0" y="100" width="400" height="800">
+                    <foreignobject x="0" y="100" width="400" height="800" id="dcount">
                         
                     </foreignobject>
                 </svg>
